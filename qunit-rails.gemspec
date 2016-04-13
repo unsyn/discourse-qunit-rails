@@ -1,10 +1,10 @@
 Gem::Specification.new do |s|
-  s.name        = "qunit-rails"
-  s.version     = "0.0.7"
-  s.authors     = ["Francesco Rodriguez"]
-  s.email       = ["frodsan@me.com"]
-  s.homepage    = "https://github.com/frodsan/qunit-rails"
-  s.summary     = "QUnit for Rails."
+  s.name        = "discourse-qunit-rails"
+  s.version     = "0.0.8"
+  s.authors     = ["Francesco Rodriguez", "Robin Ward"]
+  s.email       = ["robin.ward@gmail.com"]
+  s.homepage    = "https://github.com/discourse/discourse-qunit-rails"
+  s.summary     = "QUnit for Rails"
   s.description = s.summary
   s.license     = "Unlicense"
 
