@@ -13,12 +13,13 @@ module QUnit
       # available in production.
       config.after_initialize do
         ActiveSupport.on_load(:action_view) do
-          default_checker = ActionView::Base.precompiled_asset_checker
+          # TODO resolve problems
+          #default_checker = ActionView::Base.precompiled_asset_checker
 
-          ActionView::Base.precompiled_asset_checker = -> logical_path do
-           default_checker[logical_path] ||
-           %w{qunit.js qunit.css test_helper.css test_helper.js}.include?(logical_path)
-          end
+          #ActionView::Base.precompiled_asset_checker = -> logical_path do
+          # default_checker[logical_path] ||
+          # %w{qunit.js qunit.css test_helper.css test_helper.js}.include?(logical_path)
+          #end
         end
       end
     end
